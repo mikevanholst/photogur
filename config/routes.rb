@@ -5,11 +5,11 @@ Photogur::Application.routes.draw do
 root :to => 'pictures#index'
 
 get 'pictures' => 'pictures#index'
-
+get 'pictures/new' => 'pictures#new'
 get 'pictures/:id' => 'pictures#show', as: "picture"
 
 post 'pictures' => 'pictures#create'
-get 'pictures/new' => 'pictures#new'
+
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
