@@ -2,13 +2,10 @@ Photogur::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+resources :pictures
 root :to => 'pictures#index'
 
-get 'pictures' => 'pictures#index'
-get 'pictures/new' => 'pictures#new'
-get 'pictures/:id' => 'pictures#show', as: "picture"
 
-post 'pictures' => 'pictures#create'
 
 
   # Sample of regular route:
