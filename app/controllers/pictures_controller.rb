@@ -48,7 +48,7 @@ def show
 end
 
 def new
-	@picture = Picture.new
+
 end
 
 def create
